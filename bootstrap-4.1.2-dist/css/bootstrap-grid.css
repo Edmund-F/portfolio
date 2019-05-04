@@ -1910,3 +1910,35 @@ html {
   }
 }
 /*# sourceMappingURL=bootstrap-grid.css.map */
+html, body {
+    height: 100%;
+}
+
+div.wrap {
+    height: 350px;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:auto;width:100%;margin-right:auto;
+    overflow: hidden;
+    position: relative;
+}
+
+div.wrap > div {
+    position: absolute;
+    top: 10vh;
+    left: 33vw;
+    height: 200px;
+    width: 400px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    background-image: url('http://lorempixel.com/400/200/sports/1/' center center no-repeat);
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    z-index: -1;
+}
+
